@@ -2,11 +2,11 @@
 
 **Add advanced interaction controls to your HTML tables** the free & easy way.
 
-#### ScreenShot
+## ScreenShot
 
 <img src="https://user-images.githubusercontent.com/2421068/55276143-0e4ae800-532b-11e9-8031-48d5a575f221.png">
 
-#### Install
+## Install
 
 ```bash
 composer install jxlwqq/data-table
@@ -26,7 +26,7 @@ Add `extensions` option in your `config/admin.php` configuration file:
 ]
 ```
 
-#### Use
+## Use
 
 ```php
 use Jxlwqq\DataTable;
