@@ -43,19 +43,22 @@ $rows = [
 
 $style = ['table-bordered','table-hover', 'table-striped'];
 
-$optionss = [
+$options = [
     'paging' => true,
     'lengthChange' => false,
     'searching' => false,
     'ordering' => true,
     'info' => true,
-    'autoWidth' => false
+    'autoWidth' => false,
 ];
 
 $dataTable = new DataTable($headers, $rows, $style, $options);
 
 echo $dataTable->render();
 ```
+
+more options can be found in [DataTable Documentation](https://datatables.net/).
+
 
 ## More resources
 
