@@ -2,6 +2,8 @@
 
 **Add advanced interaction controls to your HTML tables** the free & easy way.
 
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+
 ## ScreenShot
 
 <img src="https://user-images.githubusercontent.com/2421068/55276143-0e4ae800-532b-11e9-8031-48d5a575f221.png">
