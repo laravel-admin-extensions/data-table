@@ -21,7 +21,15 @@ Add `extensions` option in your `config/admin.php` configuration file:
 'extensions' => [
     'data-table' => [
         // If the value is set to false, this extension will be disabled
-        'enable' => true
+        'enable' => true,
+        // global options
+        'options' => [
+             'paging' => false,
+             'lengthChange' => false,
+             'searching' => false,
+             'ordering' => false,
+             'info' => false,
+        ]
     ]
 ]
 ```

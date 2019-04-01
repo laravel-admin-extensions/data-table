@@ -36,13 +36,15 @@ class DataTable extends Widget implements Renderable
      * @param array $headers
      * @param array $rows
      * @param array $style
+     * @param array $options
      */
     public function __construct($headers = [], $rows = [], $style = [], $options = [])
     {
+        $global_options = (array)config('admin.extensions.data-table.options');
         $this->setHeaders($headers);
         $this->setRows($rows);
         $this->setStyle($style);
-        $this->setOptions($options);
+        $this->setOptions(array_merge($global_options, $options));
 
         $this->class('table dataTable ' . implode(' ', $this->style));
     }
@@ -97,6 +99,13 @@ class DataTable extends Widget implements Renderable
         return $this;
     }
 
+    /**
+     * Set table options.
+     *
+     * @param array $options
+     *
+     * @return $this
+     */
     public function setOptions($options = [])
     {
         $this->options = $options;
@@ -108,6 +117,7 @@ class DataTable extends Widget implements Renderable
      * Render the table.
      *
      * @return mixed|string
+     *
      * @throws \Throwable
      */
     public function render()
