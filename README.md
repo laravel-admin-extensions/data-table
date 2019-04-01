@@ -57,7 +57,7 @@ $dataTable = new DataTable($headers, $rows, $style, $options);
 echo $dataTable->render();
 ```
 
-more options can be found in [DataTable Documentation](https://datatables.net/).
+more options can be found in [DataTable Documentation](https://datatables.net/reference/option/).
 
 
 ## More resources
