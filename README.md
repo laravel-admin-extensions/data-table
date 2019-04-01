@@ -9,7 +9,7 @@
 ## Install
 
 ```bash
-composer install jxlwqq/data-table
+composer require jxlwqq/data-table
 php artisan vendor:publish --tag=laravel-admin-data-table
 ```
 
