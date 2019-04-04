@@ -15,6 +15,13 @@ composer require jxlwqq/data-table
 php artisan vendor:publish --tag=laravel-admin-data-table
 ```
 
+## Update
+
+```bash
+composer require jxlwqq/data-table
+php artisan vendor:publish --tag=laravel-admin-data-table --force
+```
+
 ## Configurations
 
 Add `extensions` option in your `config/admin.php` configuration file:
