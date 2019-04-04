@@ -41,11 +41,12 @@ class DataTable extends Widget implements Renderable
     public function __construct($headers = [], $rows = [], $style = [], $options = [])
     {
         $global_options = (array)config('admin.extensions.data-table.options');
+        $options = array_merge($global_options, $options);
+        $options = $this->loadLanguage($options);
         $this->setHeaders($headers);
         $this->setRows($rows);
         $this->setStyle($style);
-        $this->setOptions(array_merge($global_options, $options));
-
+        $this->setOptions($options);
         $this->class('table dataTable ' . implode(' ', $this->style));
     }
 
@@ -131,5 +132,26 @@ class DataTable extends Widget implements Renderable
         ];
 
         return view($this->view, $vars)->render();
+    }
+
+    /**
+     * @param $options
+     * @return mixed
+     */
+    protected function loadLanguage($options)
+    {
+        if (isset($options['language'])) {
+            $language = ucfirst($options['language']);
+            $file = __DIR__ . "/../resources/assets/dataTables-1.10.19/plugins/i18n/{$language}.lang";
+            if (file_exists($file)) {
+                $content = file_get_contents($file);
+                $content = substr($content, strpos($content, '{'));
+                $language = json_decode($content, true);
+                $options['language'] = $language;
+            } else {
+                unset($options['language']);
+            }
+        }
+        return $options;
     }
 }
