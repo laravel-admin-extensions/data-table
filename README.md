@@ -31,6 +31,7 @@ Add `extensions` option in your `config/admin.php` configuration file:
              'searching' => false,
              'ordering' => false,
              'info' => false,
+             'language' => 'English', // or Chinese
         ]
     ]
 ]
