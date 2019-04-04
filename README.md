@@ -44,6 +44,8 @@ Add `extensions` option in your `config/admin.php` configuration file:
 ]
 ```
 
+More languages can be found in [DataTable i18n](https://github.com/DataTables/Plugins/tree/master/i18n).
+
 ## Use
 
 ```php
