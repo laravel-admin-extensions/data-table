@@ -49,7 +49,7 @@ More languages can be found in [DataTable i18n](https://github.com/DataTables/Pl
 ## Use
 
 ```php
-use Jxlwqq\DataTable;
+use Jxlwqq\DataTable\DataTable;
 
 // table
 $headers = ['Id', 'Email', 'Name', 'Company'];
