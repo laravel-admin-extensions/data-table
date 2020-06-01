@@ -58,7 +58,7 @@ $rows = [
     [2, 'omnis.in@hotmail.com', 'Allie Kuhic', 'Murphy, Koepp and Morar'],
     [3, 'quia65@hotmail.com', 'Prof. Drew Heller', 'Kihn LLC'],
     [4, 'xet@yahoo.com', 'William Koss', 'Becker-Raynor'],
-    [5, 'ipsa.aut@gmail.com', 'Ms. Antonietta Kozey Jr.'],
+    [5, 'ipsa.aut@gmail.com', 'Ms. Antonietta Kozey Jr.', 'Goooogle'],
 ];
 
 $style = ['table-bordered','table-hover', 'table-striped'];
