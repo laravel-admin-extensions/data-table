@@ -1,4 +1,5 @@
-<table {!! $attributes !!} style="width:100%">
+@php($id = 'datatable-' . uniqid())
+<table id="{{ $id }}" {!! $attributes !!} style="width:100%">
     <thead>
     <tr>
         @foreach($headers as $header)
@@ -19,7 +20,7 @@
 
 <script>
     $(function () {
-        $('.dataTable').DataTable(
+        $('#{{ $id }}').DataTable(
             {!! $options !!}
         )
     })
