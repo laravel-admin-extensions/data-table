@@ -1,14 +1,14 @@
 {
-    "name": "jxlwqq/data-table",
+    "name": "hoksilato/laravel-admin-data-table-ext",
     "description": "dataTable for laravel-admin",
     "type": "library",
     "keywords": ["laravel-admin", "extension"],
-    "homepage": "https://github.com/jxlwqq/data-table",
+    "homepage": "https://github.com/hoksilato/laravel-admin-data-table-ext",
     "license": "MIT",
     "authors": [
         {
-            "name": "jxlwqq",
-            "email": "jxlwqq@gmail.com"
+            "name": "Cang Ta",
+            "email": "hoksilato176@gmail.com"
         }
     ],
     "require": {
