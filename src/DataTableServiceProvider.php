@@ -32,6 +32,17 @@ class DataTableServiceProvider extends ServiceProvider
             Admin::css('vendor/laravel-admin-ext/data-table/dataTables-1.10.19/dataTables.bootstrap.min.css');
             Admin::js('vendor/laravel-admin-ext/data-table/dataTables-1.10.19/jquery.dataTables.min.js');
             Admin::js('vendor/laravel-admin-ext/data-table/dataTables-1.10.19/dataTables.bootstrap.min.js');
+
+            // Export
+            Admin::js('vendor/laravel-admin-ext/data-table/dataTables-1.10.19/plugins/buttons/buttons.dataTables.min.css');
+            Admin::js('vendor/laravel-admin-ext/data-table/dataTables-1.10.19/plugins/buttons/buttons.html5.min.js');
+            Admin::js('vendor/laravel-admin-ext/data-table/dataTables-1.10.19/plugins/buttons/buttons.print.min.js');
+            Admin::js('vendor/laravel-admin-ext/data-table/dataTables-1.10.19/plugins/buttons/dataTables.buttons.min.js');
+
+            // Libs
+            Admin::js('vendor/laravel-admin-ext/data-table/dataTables-1.10.19/libs/jszip/jszip.min.js');
+            Admin::js('vendor/laravel-admin-ext/data-table/dataTables-1.10.19/libs/pdfmake/pdfmake.min.js');
+            Admin::js('vendor/laravel-admin-ext/data-table/dataTables-1.10.19/libs/pdfmake/vfs_fonts.js');
         });
 
     }
